@@ -96,3 +96,10 @@ connectEnsureLogin.ensureLoggedIn(),
     { root: __dirname}
     )
 });
+
+
+/* REGISTERED USERS */ 
+
+UserDetails.register({username:'paul', active: false}, 'paul');
+UserDetails.register({username:'joy', active: false}, 'joy');
+UserDetails.register({username:'ray', active: false}, 'ray');
