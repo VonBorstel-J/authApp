@@ -11,7 +11,11 @@ const bodyParser = require('body-parser');
 const expressSession = require('express-session') ({ 
     secret: 'secret',
     resave: false, 
-    saveUninitialized: false
+    saveUninitialize: true, 
+    cookie: { 
+        secure: false,
+        maxAge: 90000
+    }
 }); 
 
 app.use(bodyParser.json()); 
